@@ -1,0 +1,49 @@
+{
+  "name": "simple-node-typescript-starter",
+  "version": "0.1.0",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node build/index.js",
+    "dev": "nodemon src/index.ts",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "starter",
+    "template",
+    "boilerplate",
+    "eslint",
+    "prettier"
+  ],
+  "author": "Thomas Wang",
+  "license": "MIT",
+  "description": "A simple starter for Node project written in TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:xg-wang/simple-node-typescript-starter.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.28.2",
+    "@typescript-eslint/parser": "^4.28.2",
+    "eslint": "^7.30.0",
+    "eslint-config-prettier": "^8.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "nodemon": "^2.0.9",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "volta": {
+    "node": "16.4.2",
+    "yarn": "1.22.10"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix"
+  }
+}
